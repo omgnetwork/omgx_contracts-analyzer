@@ -1,4 +1,4 @@
-- [The Contract Analyzer](#the-contract-analyzer)
+- [The Contracts Analyzer](#the-contract-analyzer)
   * [Prerequisites](#prerequisites)
   * [Setting Up](#setting-up)
   * [Add Contracts](#add-contracts)
@@ -6,7 +6,7 @@
   * [Deploying Contracts to local test system or to OMGX Rinkeby](#deploying-contracts-to-local-test-system-or-to-omgx-rinkeby)
   * [Test](#test)
 
-# The Contract Analyzer
+# The Contracts Analyzer
 
 This repo is used to analyze contracts written for L1, as a starting point for evaluating potential code changes needed to deploy them to L2.
 
@@ -24,8 +24,8 @@ Please clone and cd to [this repository](https://github.com/enyalabs/contracts-a
 
 ```bash
 
-git clone https://github.com/enyalabs/contracts-analyzer.git
-cd contracts-analyzer
+git clone https://github.com/enyalabs/omgx_contracts-analyzer.git
+cd omgx_contracts-analyzer
 
 ```
 
@@ -39,7 +39,7 @@ yarn install
 
 ## Add Contracts
 
-Copy your contracts into [packages/analyzer/contracts](https://github.com/enyalabs/contracts-analyzer/tree/master/packages/analyzer/contracts) and run:
+Copy your contracts into `/contracts` and run:
 
 ```bash
 
@@ -52,7 +52,7 @@ You will probably have to `yarn add` multiple packages, and change/update pragma
 
 ## Notes
 
-The code compliles the contracts, which will typically provide extensive debug information and warnings/errors, and also checks for contract size and inline assembly. The second contract size check is superfluous, since the compiler already does that/
+The code compliles the contracts, which will typically provide extensive debug information and warnings/errors, and also checks for contract size and inline assembly. The second contract size check is superfluous, since the compiler already does that.
 
 ## Deploying Contracts to local test system or to OMGX Rinkeby
 
