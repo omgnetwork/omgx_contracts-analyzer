@@ -10,14 +10,14 @@ let deployConfig = {
   local: {
     l1RpcUrl: 'http://localhost:9545/',
     l2RpcUrl: 'http://localhost:8545',
-    l1MessengerAddress: '0xA6404B184Ad3f6F41b6472f02ba45f25C6A66d49',
+    l1MessengerAddress: '0x5FbDB2315678afecb367f032d93F642f64180aa3',
     l1ETHAddress: '0x4F53A01556Dc6f120db9a1b4caE786D5f0b5792C',
     l2MessengerAddress: '0x4200000000000000000000000000000000000007',
     l2ETHAddress: '0x4200000000000000000000000000000000000006',
   },
   rinkeby: {
     l1RpcUrl: 'https://rinkeby.infura.io/v3/YOUR_INFURA_KEY_HERE',
-    l2RpcUrl: 'http://3.85.224.26:8545',
+    l2RpcUrl: 'https://rinkeby.omgx.network',
     l1MessengerAddress: '0x07A5992d8bE8c271B3baa5320975b6E8d8816e34',
     l1ETHAddress: '0xBa67f68C956178CB7fd1c882f9B882487Fa28898',
     l2MessengerAddress: '0x4200000000000000000000000000000000000007',

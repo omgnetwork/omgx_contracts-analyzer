@@ -6,7 +6,14 @@ const { utils } = require("ethers");
 const R = require("ramda");
 const { JsonRpcProvider } = require("@ethersproject/providers");
 
-async function deploy({rpcUrl, contractName, pk, ovm = false, _args = [], overrides = {}, libraries = {}}) {
+async function deploy({
+  rpcUrl, 
+  contractName, 
+  pk, ovm = false, 
+  _args = [], 
+  overrides = {}, 
+  libraries = {}
+}) {
   
   console.log(` 🛰  ${ovm?`OVM`:`EVM`} Deploying: ${contractName} on ${rpcUrl}`);
 
